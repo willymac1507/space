@@ -24,7 +24,8 @@ app.get("/:section", (req, res) => {
     const backImage = `${section}-background`;
     res.render(`${section}`, {
         image: backImage,
-        active: `${section}`
+        active: `${section}`,
+        dest: "mars"
     });
 });
 

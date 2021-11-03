@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.svg">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Space Tourism</title>
+</head>
+
+<body class="<%= backImage %>">
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/shared/logo.svg" alt="logo">
+            <div class="logo-line"></div>
+        </div>
+        <div class="nav-container">
+            <div class="nav <%=active%>-active">
+                <div class="nav-item">
+                    <a class="nav-text" id="home" href="/home">
+                        <span class="nav-number">00</span>Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-text" id="dest" href="/destination">
+                        <span class="nav-number">01</span>Destination
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-text" id="crew" href="/crew">
+                        <span class="nav-number">02</span>crew
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-text" id="tech" href="/technology">
+                        <span class="nav-number">03</span>technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>

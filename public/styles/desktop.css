@@ -400,7 +400,7 @@ a {
 }
 
 .crew-bio {
-    width: 40vw;
+    width: 30vw;
     grid-row: 4;
     font-family: 'Barlow', sans-serif;
     font-weight: 300;
@@ -422,4 +422,13 @@ a {
 
 .crew-slider-selector svg:hover circle {
     fill: #FFF;
+    opacity: 50%;
+    transition-duration: 0.3s;
+}
+
+.active-0 #doug,
+.active-1 #mark,
+.active-2 #vic,
+.active-3 #anou {
+    opacity: 100%;
 }

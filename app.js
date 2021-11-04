@@ -45,6 +45,18 @@ app.get("/destination/:tab", (req, res) => {
     });
 });
 
+app.get("/crew/:tab", (req, res) => {
+    const tab = req.params.tab;
+    const details = data.crew[tab];
+    const backImage = "crew-background";
+    res.render("crew", {
+        image: backImage,
+        active: "crew",
+        member: `${tab}`,
+        details: details
+    });
+});
+
 
 
 

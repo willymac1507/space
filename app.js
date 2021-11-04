@@ -4,6 +4,10 @@ const data = require("./public/data/data.json");
 
 const app = express();
 
+function caps(word) {
+    return word[0].toUpperCase() + word.slice(1);
+};
+
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({
@@ -25,7 +29,19 @@ app.get("/:section", (req, res) => {
     res.render(`${section}`, {
         image: backImage,
         active: `${section}`,
-        dest: "mars"
+        dest: "moon"
+    });
+});
+
+app.get("/destination/:tab", (req, res) => {
+    const tab = req.params.tab;
+    const details = data.destinations.find(dest => dest.name === caps(tab));
+    const backImage = "destination-background";
+    res.render("destination", {
+        image: backImage,
+        active: "destination",
+        dest: `${tab}`,
+        details: details
     });
 });
 

@@ -13,6 +13,16 @@ body {
     background-repeat: no-repeat;
 }
 
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.17rem;
+    text-transform: uppercase;
+}
+
 .home-background {
     background-image: url("../images/home/background-home-desktop.jpg");
 }
@@ -71,12 +81,6 @@ body {
 }
 
 .nav {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
-    color: #FFF;
-    font-size: 1rem;
-    letter-spacing: 0.17rem;
-    text-transform: uppercase;
     margin-left: 10%;
     height: 100%;
 }
@@ -98,8 +102,6 @@ body {
 }
 
 .nav-text {
-    color: #FFF;
-    text-decoration: none;
     height: 58%;
     margin-bottom: 3px;
     border-bottom: 3px transparent;
@@ -177,7 +179,6 @@ body {
 }
 
 .explore-button {
-    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,14 +213,13 @@ body {
     margin: 0 10vw 10vh 10vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 10% 20% 30% 22%;
-    row-gap: 2%;
+    grid-template-rows: 18% 10% 25% 33% 18%;
     color: #FFF;
 }
 
 .dest-title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     grid-column: 1;
     grid-row: 1;
     font-family: 'Barlow Condensed', sans-serif;
@@ -243,6 +243,7 @@ body {
 
 .dest-name {
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     font-family: 'Bellefair', serif;
     font-size: 6.25rem;
@@ -250,4 +251,91 @@ body {
     grid-column: 2;
     grid-row: 3;
     margin-left: 10vw;
+}
+
+.dest-nav {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10vw;
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+}
+
+.dest-nav-item {
+    height: 65%;
+    margin-bottom: 3px;
+    border-bottom: 3px transparent;
+    margin-right: 2rem;
+    color: #D0D6F9;
+}
+
+.dest-nav-item:hover {
+    transition-duration: 0.3s;
+    border-bottom: 3px solid #979797;
+}
+
+.dest-description {
+    margin-left: 10vw;
+    margin-top: 1.5rem;
+    grid-column: 2;
+    grid-row: 4;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #D0D6F9;
+    line-height: 2rem;
+}
+
+.moon-active-tab #moon,
+.mars-active-tab #mars,
+.titan-active-tab #titan,
+.europa-active-tab #europa {
+    color: #FFF;
+    border-bottom: 3px solid #FFF;
+}
+
+.dest-stats {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    grid-column: 2;
+    grid-row: 5;
+    border-top: 1px solid grey;
+    margin-left: 10vw;
+}
+
+.dest-stats-distance-text,
+.dest-stats-distance-value {
+    grid-column: 1;
+}
+
+.dest-stats-travel-text,
+.dest-stats-travel-value {
+    grid-column: 2;
+}
+
+.dest-stats-distance-text,
+.dest-stats-travel-text {
+    display: flex;
+    align-items: flex-end;
+    grid-row: 1;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 0.15rem;
+    color: #D0D6F9;
+    text-transform: uppercase;
+}
+
+.dest-stats-distance-value,
+.dest-stats-travel-value {
+    display: flex;
+    align-items: center;
+    grid-row: 2;
+    font-family: 'Bellefair', serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: #FFF;
+    text-transform: uppercase;
 }

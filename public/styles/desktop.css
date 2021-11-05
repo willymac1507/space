@@ -287,10 +287,10 @@ a {
     line-height: 2rem;
 }
 
-.moon-active-tab #moon,
-.mars-active-tab #mars,
-.titan-active-tab #titan,
-.europa-active-tab #europa {
+.active-moon-dest #moon,
+.active-mars-dest #mars,
+.active-titan-dest #titan,
+.active-europa-dest #europa {
     color: #FFF;
     border-bottom: 3px solid #FFF;
 }
@@ -426,9 +426,141 @@ a {
     transition-duration: 0.3s;
 }
 
-.active-0 #doug,
-.active-1 #mark,
-.active-2 #vic,
-.active-3 #anou {
+.active-0-crew #doug,
+.active-1-crew #mark,
+.active-2-crew #vic,
+.active-3-crew #anou {
     opacity: 100%;
+}
+
+/* Technology pages content */
+
+.tech-main-container {
+    display: grid;
+    grid-template-rows: 28% 72%;
+    grid-template-columns: 100%;
+    height: 65vh;
+    width: 44vw;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    color: #FFF;
+}
+
+.tech-title {
+    display: flex;
+    align-items: flex-start;
+    grid-column: 1;
+    grid-row: 1;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.tech-number {
+    font-weight: 700;
+    opacity: 25%;
+    margin-right: 1.5rem;
+}
+
+.tech-sub-container {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 12.65% 75%;
+    column-gap: 12.35%;
+    grid-template-rows: 100%;
+}
+
+.tech-slider {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 19% 19% 19% 19%;
+    row-gap: 8%;
+    grid-template-columns: 100%;
+}
+
+.tech-slider-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-family: 'Bellefair', serif;
+    font-size: 2rem;
+}
+
+.tech-slider-number:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition-duration: 0.3s;
+}
+
+#number1 {
+    grid-row: 1;
+}
+
+#number2 {
+    grid-row: 2;
+}
+
+#number3 {
+    grid-row: 3;
+}
+
+.tech-content-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 7% 15.5% 73.5%;
+    row-gap: 2%;
+    grid-template-columns: 100%;
+}
+
+.tech-content-title {
+    display: flex;
+    align-items: flex-start;
+    grid-row: 1;
+    grid-column: 1;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.17rem;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.tech-content-name {
+    font-family: 'Bellefair', serif;
+    font-size: 3.5rem;
+    color: #FFF;
+    text-transform: uppercase;
+    display: flex; 
+    align-items: center;
+}
+
+.tech-content-description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.125rem;
+    color: #D0D6F9;
+    line-height: 2rem;
+    padding-right: 7%;
+}
+
+.tech-image {
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+}
+
+.active-0-tech #number1,
+.active-1-tech #number2,
+.active-2-tech #number3 {
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    color: #000;
 }

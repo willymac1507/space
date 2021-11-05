@@ -57,6 +57,18 @@ app.get("/crew/:tab", (req, res) => {
     });
 });
 
+app.get("/technology/:tab", (req, res) => {
+    const tab = req.params.tab;
+    const details = data.technology[tab];
+    const backImage = "technology-background";
+    res.render("technology", {
+        image: backImage,
+        active: "technology",
+        item: `${tab}`,
+        details: details
+    });
+});
+
 
 
 

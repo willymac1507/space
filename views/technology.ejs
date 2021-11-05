@@ -3,3 +3,19 @@
     active: active
 }); -%>
 
+<div class="tech-main-container">
+    <div class="tech-title"><span class="tech-number">03</span>space launch 101</div>
+    <div class="tech-sub-container">
+        <div class="tech-slider active-<%=item%>-tech">
+            <a href="/technology/0" class="tech-slider-number" id="number1">1</a>
+            <a href="/technology/1" class="tech-slider-number" id="number2">2</a>
+            <a href="/technology/2" class="tech-slider-number" id="number3">3</a>
+        </div>
+        <div class="tech-content-container">
+            <div class="tech-content-title">the terminology</div>
+            <div class="tech-content-name"><%= details.name %></div>
+            <div class="tech-content-description"><%= details.description%></div>
+        </div>
+    </div>
+</div>
+<img src="<%= details.images.portrait %>" alt="<%= details.name %>" class="tech-image">

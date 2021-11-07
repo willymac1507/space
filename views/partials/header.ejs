@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.svg">
-    <link rel="stylesheet" href="../styles/desktop.css">
+
+    <link rel="stylesheet" media='screen and (min-width: 769px)'href="../styles/desktop.css">
+    <link rel="stylesheet" media='screen and (max-width: 768px) and (min-width: 415px)' href="../styles/tablet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Barlow:wght@300;400;700&family=Bellefair&display=swap"
         rel="stylesheet">
     <title>Space Tourism</title>
 </head>
@@ -22,26 +27,26 @@
             <img class="logo" src="../images/shared/logo.svg" alt="logo">
             <div class="logo-line"></div>
         </div>
-        <div class="nav-container">
+        <div class="nav-container barlow-condensed regular caps">
             <div class="nav <%=active%>-active">
                 <div class="nav-item">
-                    <a class="nav-text" id="home" href="/home">
-                        <span class="nav-number">00</span>Home
+                    <a class="nav-text primary" id="home" href="/home">
+                        <span class="nav-number bold">00</span>Home
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-text" id="dest" href="/destination/moon">
-                        <span class="nav-number">01</span>Destination
+                    <a class="nav-text primary" id="dest" href="/destination/moon">
+                        <span class="nav-number bold">01</span>Destination
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-text" id="crew" href="/crew/0">
-                        <span class="nav-number">02</span>crew
+                    <a class="nav-text primary" id="crew" href="/crew/0">
+                        <span class="nav-number bold">02</span>crew
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-text" id="tech" href="/technology/0">
-                        <span class="nav-number">03</span>technology
+                    <a class="nav-text primary" id="tech" href="/technology/0">
+                        <span class="nav-number bold">03</span>technology
                     </a>
                 </div>
             </div>

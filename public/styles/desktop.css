@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1.1vw;
+}
+
 /* Body and background images */
 
 body {
@@ -14,13 +18,9 @@ body {
 }
 
 a {
-    color: #FFF;
     text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
     font-size: 1rem;
     letter-spacing: 0.17rem;
-    text-transform: uppercase;
 }
 
 .home-background {
@@ -38,6 +38,19 @@ a {
 .technology-background {
     background-image: url("../images/technology/background-technology-desktop.jpg");
 }
+
+/* Typography */
+
+.barlow {font-family: 'Barlow', sans-serif;}
+.barlow-condensed {font-family: 'Barlow Condensed', sans-serif;}
+.bellefair {font-family: 'Bellefair', serif;}
+.light {font-weight: 100;}
+.bold {font-weight: 700;}
+.regular {font-weight: 300;}
+.caps {text-transform: uppercase;}
+.primary {color: #FFF;}
+.secondary {color: #D0D6F9;}
+.dark {color: #000;}
 
 /* Navigation bar */
 
@@ -108,10 +121,6 @@ a {
     transition-duration: 0.3s;
 }
 
-.nav-active {
-    border-bottom: 3px solid white;
-}
-
 .nav-text:hover {
     transition-duration: 0.3s;
     cursor: pointer;
@@ -119,14 +128,12 @@ a {
 }
 
 .nav-number {
-    font-weight: 700;
     margin-right: 0.75rem;
 }
 
 /* Home page content */
 
 .home-main-container {
-    color: #D0D6F9;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 12% 30% 34%;
@@ -144,11 +151,8 @@ a {
 
 .home-lead-in {
     grid-row: 1;
-    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.75rem;
-    font-weight: 300;
     letter-spacing: 0.3rem;
-    text-transform: uppercase;
 }
 
 .home-title {
@@ -156,17 +160,12 @@ a {
     flex-direction: row;
     align-items: center;
     grid-row: 2;
-    font-family: 'Bellefair', serif;
     font-size: 9.3rem;
-    color: #FFF;
-    text-transform: uppercase;
 }
 
 .home-explain {
-    font-family: 'Barlow', sans-serif;
     font-size: 1.125rem;
     line-height: 2rem;
-    font-weight: 300;
 }
 
 .explore-button-container {
@@ -182,11 +181,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0B0D17;
-    font-family: 'Bellefair', serif;
     font-size: 2rem;
     letter-spacing: 0.125rem;
-    text-transform: uppercase;
     background-color: #fff;
     border-radius: 100%;
     height: 20vw;
@@ -222,11 +218,8 @@ a {
     align-items: flex-start;
     grid-column: 1;
     grid-row: 1;
-    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.75rem;
-    font-weight: 300;
     letter-spacing: 0.3rem;
-    text-transform: uppercase;
 }
 
 .dest-number {
@@ -245,9 +238,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    font-family: 'Bellefair', serif;
     font-size: 6.25rem;
-    text-transform: uppercase;
     grid-column: 2;
     grid-row: 3;
     margin-left: 10vw;
@@ -280,8 +271,6 @@ a {
     margin-top: 1.5rem;
     grid-column: 2;
     grid-row: 4;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
     font-size: 1.125rem;
     color: #D0D6F9;
     line-height: 2rem;
@@ -320,12 +309,9 @@ a {
     display: flex;
     align-items: flex-end;
     grid-row: 1;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
     font-size: 0.875rem;
     letter-spacing: 0.15rem;
     color: #D0D6F9;
-    text-transform: uppercase;
 }
 
 .dest-stats-distance-value,
@@ -333,11 +319,8 @@ a {
     display: flex;
     align-items: center;
     grid-row: 2;
-    font-family: 'Bellefair', serif;
-    font-weight: 300;
     font-size: 1.75rem;
     color: #FFF;
-    text-transform: uppercase;
 }
 
 /* Crew pages ::content */

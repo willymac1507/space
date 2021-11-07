@@ -5,21 +5,21 @@
 
 <main>
     <div class="dest-main-container">
-        <div class="dest-title"><span class="dest-number">01</span>pick your destination</div>
+        <div class="dest-title barlow-condensed regular caps"><span class="dest-number">01</span>pick your destination</div>
         <img class="dest-image" src="../images/destination/image-<%= dest %>.webp">
-        <div class="dest-nav active-<%= dest %>-dest">
+        <div class="dest-nav active-<%= dest %>-dest barlow-condensed regular caps">
             <a href="/destination/moon" class="dest-nav-item" id="moon">Moon</a>
             <a href="/destination/mars" class="dest-nav-item" id="mars">Mars</a>
             <a href="/destination/europa" class="dest-nav-item" id="europa">Europa</a>
             <a href="/destination/titan" class="dest-nav-item" id="titan">Titan</a>
         </div>
-        <div class="dest-name"><%= dest %></div>
-        <div class="dest-description"><%= details.description %></div>
+        <div class="dest-name bellefair caps"><%= dest %></div>
+        <div class="dest-description barlow regular"><%= details.description %></div>
         <div class="dest-stats">
-            <div class="dest-stats-distance-text">average distance</div>
-            <div class="dest-stats-distance-value"><%= details.distance %></div>
-            <div class="dest-stats-travel-text">est. travel time</div>
-            <div class="dest-stats-travel-value"><%= details.travel %></div>
+            <div class="dest-stats-distance-text barlow-condensed regular caps">average distance</div>
+            <div class="dest-stats-distance-value bellefair caps"><%= details.distance %></div>
+            <div class="dest-stats-travel-text barlow-condensed regular caps">est. travel time</div>
+            <div class="dest-stats-travel-value bellefair caps"><%= details.travel %></div>
         </div>
     </div>
 </main>

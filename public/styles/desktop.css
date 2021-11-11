@@ -535,10 +535,18 @@ a {
     padding-right: 7%;
 }
 
-.tech-image {
+#tech-portrait-image {
     position: absolute;
     right: 0;
     bottom: 10vh;
+}
+
+#tech-landscape-image {
+    display: none;
+}
+
+#tablet-slider {
+    display: none;
 }
 
 .active-0-tech #number1,

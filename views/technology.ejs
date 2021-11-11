@@ -3,19 +3,20 @@
     active: active
 }); -%>
 
-<div class="tech-main-container">
-    <div class="tech-title"><span class="tech-number">03</span>space launch 101</div>
+<div class="tech-main-container primary">
+    <div class="tech-title barlow-condensed regular caps"><span class="tech-number bold">03</span>space launch 101</div>
     <div class="tech-sub-container">
-        <div class="tech-slider active-<%=item%>-tech">
-            <a href="/technology/0" class="tech-slider-number" id="number1">1</a>
-            <a href="/technology/1" class="tech-slider-number" id="number2">2</a>
-            <a href="/technology/2" class="tech-slider-number" id="number3">3</a>
+        <div class="tech-slider bellefair active-<%=item%>-tech">
+            <a href="/technology/0" class="tech-slider-number primary" id="number1">1</a>
+            <a href="/technology/1" class="tech-slider-number primary" id="number2">2</a>
+            <a href="/technology/2" class="tech-slider-number primary" id="number3">3</a>
         </div>
         <div class="tech-content-container">
-            <div class="tech-content-title">the terminology</div>
-            <div class="tech-content-name"><%= details.name %></div>
-            <div class="tech-content-description"><%= details.description%></div>
+            <div class="tech-content-title barlow-condensed regular caps secondary">the terminology...</div>
+            <div class="tech-content-name bellefair caps"><%= details.name %></div>
+            <div class="tech-content-description barlow secondary"><%= details.description%></div>
         </div>
+        <img src="<%= details.images.landscape %>" alt="<%= details.name %>" id="tech-landscape-image">
     </div>
 </div>
-<img src="<%= details.images.portrait %>" alt="<%= details.name %>" class="tech-image">
+<img src="<%= details.images.portrait %>" alt="<%= details.name %>" id="tech-portrait-image">

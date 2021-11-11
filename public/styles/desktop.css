@@ -229,6 +229,7 @@ a {
 }
 
 .dest-image {
+    height: 80%;
     grid-column: 1;
     grid-row: 3 / span 3;
     margin-left: 5vw;

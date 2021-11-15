@@ -412,8 +412,8 @@ a {
 .crew-title {
     grid-column: 1;
     grid-row: 1;
-    font-size: 1.25rem;
-    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    letter-spacing: 0.17rem;
 }
 
 .crew-number {
@@ -486,17 +486,18 @@ a {
     grid-row: 2;
     display: grid;
     height: 100%;
+    margin: 0 auto;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 51% 8% 36%;
+    grid-template-rows: 30% 15% 55%;
 }
 
 .tech-title {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     grid-row: 1;
-    font-size: 1.25rem;
-    letter-spacing: 0.3rem;
-    margin: 0 10%;
+    font-size: 1rem;
+    letter-spacing: 0.17rem;
 }
 
 .tech-number {
@@ -509,19 +510,20 @@ a {
 }
 
 #tech-landscape-image {
-    grid-row: 2;
+    grid-row: 1;
     width: 100%;
     margin-top: 1rem;
 }
 
 .tech-slider {
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     align-items: center;
+    justify-content: center;
     display: grid;
-    grid-template-columns: 8vw 8vw 8vw;
-    column-gap: 3vw;
-    margin: 0 35%;
+    grid-template-columns: 12vw 12vw 12vw;
+    column-gap: 5vw;
+    margin: 0 27%;
     height: 100%;
 }
 
@@ -531,10 +533,10 @@ a {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 100%;
-    height: 100%;
+    height: 50%;
     width: auto;
     aspect-ratio: 1 / 1;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .tech-slider-number:hover {
@@ -555,12 +557,11 @@ a {
 }
 
 .tech-content-container {
-    grid-row: 4;
+    grid-row: 3;
     display: grid;
-    grid-template-rows: 12% 15.5% 62.5%;
+    grid-template-rows: 5% 10% 60%;
     row-gap: 2%;
     grid-template-columns: 100%;
-    margin-top: 2rem;
 }
 
 .tech-content-title {
@@ -568,22 +569,21 @@ a {
     align-items: flex-start;
     justify-content: center;
     grid-row: 1;
-    grid-column: 1;
-    font-size: 1rem;
+    font-size: .875rem;
     letter-spacing: 0.17rem;
 }
 
 .tech-content-name {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .tech-content-description {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    margin: 1rem 10rem;
+    font-size: 0.983rem;
+    line-height: 1.57rem;
+    margin: 0 1.5rem;
     text-align: center;
 }
 

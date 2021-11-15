@@ -4,7 +4,7 @@
 }); -%>
 
 <main>
-    <div class="dest-main-container">
+    <div class="dest-main-container primary">
         <div class="dest-title barlow-condensed regular caps"><span class="dest-number">01</span>pick your destination</div>
         <img class="dest-image" src="../images/destination/image-<%= dest %>.webp">
         <div class="dest-nav active-<%= dest %>-dest barlow-condensed regular caps">
@@ -14,7 +14,7 @@
             <a href="/destination/titan" class="dest-nav-item" id="titan">Titan</a>
         </div>
         <div class="dest-name bellefair caps"><%= dest %></div>
-        <div class="dest-description barlow regular"><%= details.description %></div>
+        <div class="dest-description barlow regular secondary"><%= details.description %></div>
         <div class="dest-stats">
             <div class="dest-stats-distance-text barlow-condensed regular caps">average distance</div>
             <div class="dest-stats-distance-value bellefair caps"><%= details.distance %></div>
@@ -24,3 +24,5 @@
     </div>
 </main>
 </body>
+
+<%- include('partials/footer') %>

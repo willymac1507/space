@@ -54,6 +54,10 @@ a {
 
 /* Navigation bar */
 
+.hamburger, .close-icon {
+    display: none;
+}
+
 .logo-container,
 .nav-container {
     display: inline-block;
